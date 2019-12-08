@@ -1,4 +1,5 @@
 import { createApp } from "./vue.esm-browser";
+import Twitter from "./twitter"; // @imesutkoca
 
 const Example = {
   setup() {
@@ -11,7 +12,7 @@ const Example = {
       <p>increment count inside of popup</p>
       <button @click="count++">increment</button>
       <Portal target="#popup-target">
-         <div class='popup'>
+         <div class="popup">
            <h4> Popup </h4>
            <p>im inside of #popup-target element not in #app.</p>
            <p>open devtools to check.</p>
@@ -28,9 +29,13 @@ const App = {
   },
 
   template: `
-    <h1>Vue 3 - Portal Example</h1>
+    <h1>Vue 3 - Portal Example </h1>
     <Example />
+    
+    <Twitter />
   `
 };
 
-createApp().mount(App, "#app");
+var app = createApp();
+app.component("Twitter", Twitter);
+app.mount(App, "#app");
