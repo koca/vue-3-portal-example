@@ -1,7 +1,7 @@
 {
-  "name": "vue-3-portal-example",
+  "name": "vue-3-portal-github",
   "version": "1.0.0",
-  "description": "Vue 3 portals example",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
