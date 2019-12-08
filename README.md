@@ -2,6 +2,8 @@
 
 `src/vue-esm-browser` is built from [vue-next](https://github.com/vuejs/vue-next)
 
+`index.html` contains #portal-target element
+
 ## Usage
 
 ```bash
